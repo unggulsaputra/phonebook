@@ -1,10 +1,11 @@
 <template>
 
+<div>
 
 <nav class="panel column is-offset-2 is-8">
   <p class="panel-heading">
     Pembodohan Vue Js
-    <button class="button is-primary is-outlined ">
+    <button class="button is-primary is-outlined " @click="addNew">
       new
     </button>
   </p>
@@ -34,5 +35,29 @@
   
 </nav>
 
+<add :openmodal='addActive' @closeRequest="close"></add>
+</div>
 
 </template>
+
+<script>
+
+let add = require('./add.vue');
+export default{
+	components:{add},
+	data(){
+		return {
+			addActive : ''
+		}
+	},
+	methods:{
+		addNew(){
+			this.addActive = 'is-active'
+		},
+		close(){
+			this.addActive = ''
+		}
+	}
+}
+
+</script>
