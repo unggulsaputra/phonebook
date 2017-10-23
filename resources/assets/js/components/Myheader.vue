@@ -8,19 +8,13 @@
 
 <div class="navbar-menu is-active">
 
-    <a class="navbar-item" href="">
-        home
-    </a>
-
-    <a class="navbar-item" href="">
-        about
-    </a>
-
+    <router-link to="/home" class="navbar-item">home</router-link>
+    <router-link to="/about" class="navbar-item">about</router-link>
 </div>
 
     <button class="button navbar-burger">
-      <span>tes</span>
-      <span>tos</span>
+      <span></span>
+      <span></span>
       <span></span>
     </button>
   </div>
