@@ -14,8 +14,14 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+let myheader =  require('./components/Myheader.vue');
+let Myfooter =  require('./components/Myfooter.vue');
 
 const app = new Vue({
-    el: '#app'
+
+    el: '#app',
+    components:{
+    	myheader,
+    	Myfooter,
+    }
 });
